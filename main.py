@@ -66,7 +66,7 @@ def getResultFromFilePathByTFLite(path):
     imr.save(fh_im, format='JPEG')
     fh_im.seek(0)
 
-    image = (skimage.img_as_float(skimage.io.imread(fh_im, as_grey=False))
+    image = (skimage.img_as_float(skimage.io.imread(fh_im, as_gray=False))
              .astype(np.float32))
 
     # 填装数据
@@ -84,6 +84,7 @@ def getResultFromFilePathByTFLite(path):
         "==========================================================================================================")
     print("")
     print("")
+    return result
 
 
 def getResultFromFilePathByPyModle(path):
@@ -101,7 +102,7 @@ def getResultFromFilePathByPyModle(path):
     imr.save(fh_im, format='JPEG')
     fh_im.seek(0)
 
-    image = (skimage.img_as_float(skimage.io.imread(fh_im, as_grey=False))
+    image = (skimage.img_as_float(skimage.io.imread(fh_im, as_gray=False))
              .astype(np.float32))
 
     final = prepare_image(image)
@@ -117,6 +118,7 @@ def getResultFromFilePathByPyModle(path):
         print(
             "==========================================================================================================")
         print('Python-->>result:{},path:{}'.format(predictions[0], path))
+        return predictions[0]
 
 
 def getResultListFromDir():
