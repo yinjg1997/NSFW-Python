@@ -84,6 +84,8 @@ def getResultFromFilePathByTFLite(path):
         "==========================================================================================================")
     print("")
     print("")
+    # NSFWScoreBean.sfw   ... 非涉黄数值 数值越大约安全
+    # NSFWScoreBean.nsfw   ... 涉黄数值  数值越大约危险
     return result
 
 
