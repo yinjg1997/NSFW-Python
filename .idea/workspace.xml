@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e0fe2a51-b49d-4a3f-82d6-15cbb1aefba3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/flask-open-nsfw.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/open_nsfw-weights.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/checkpoint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/frozen_nsfw.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/nsfw-graph.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/nsfw.tflite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/nsfw_model.ckpt.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/nsfw_model.ckpt.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/nsfw_model.ckpt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flask-open-nsfw.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flask-open-nsfw.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +27,9 @@
       </set>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
@@ -56,15 +49,18 @@
   <component name="ProjectId" id="1V8gf3pVtGXazlK1D24z7RD3E2L" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/yinjg/Desktop/NSFW-Python",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/model" />
@@ -79,6 +75,7 @@
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="flask-open-nsfw" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -101,6 +98,7 @@
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="flask-open-nsfw" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -139,6 +137,14 @@
       </list>
     </option>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -178,42 +184,12 @@
     <MESSAGE value="First commit." />
     <option name="LAST_COMMIT_MESSAGE" value="First commit." />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="2518" height="969" key="GridCell.Tab.0.bottom" timestamp="1576643410056">
-      <screen x="0" y="23" width="2560" height="1350" />
-    </state>
-    <state width="2518" height="969" key="GridCell.Tab.0.bottom/0.23.2560.1350@0.23.2560.1350" timestamp="1576643410056" />
-    <state width="2518" height="969" key="GridCell.Tab.0.center" timestamp="1576643410056">
-      <screen x="0" y="23" width="2560" height="1350" />
-    </state>
-    <state width="2518" height="969" key="GridCell.Tab.0.center/0.23.2560.1350@0.23.2560.1350" timestamp="1576643410056" />
-    <state width="2518" height="969" key="GridCell.Tab.0.left" timestamp="1576643410056">
-      <screen x="0" y="23" width="2560" height="1350" />
-    </state>
-    <state width="2518" height="969" key="GridCell.Tab.0.left/0.23.2560.1350@0.23.2560.1350" timestamp="1576643410056" />
-    <state width="2518" height="969" key="GridCell.Tab.0.right" timestamp="1576643410056">
-      <screen x="0" y="23" width="2560" height="1350" />
-    </state>
-    <state width="2518" height="969" key="GridCell.Tab.0.right/0.23.2560.1350@0.23.2560.1350" timestamp="1576643410056" />
-    <state x="1038" y="426" key="RollbackChangesDialog" timestamp="1576640997050">
-      <screen x="0" y="23" width="2560" height="1350" />
-    </state>
-    <state x="1038" y="426" key="RollbackChangesDialog/0.23.2560.1350@0.23.2560.1350" timestamp="1576640997050" />
-    <state x="781" y="337" key="SettingsEditor" timestamp="1576641330875">
-      <screen x="0" y="23" width="2560" height="1350" />
-    </state>
-    <state x="781" y="337" key="SettingsEditor/0.23.2560.1350@0.23.2560.1350" timestamp="1576641330875" />
-    <state x="100" y="123" width="2360" height="1150" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576642688491">
-      <screen x="0" y="23" width="2560" height="1350" />
-    </state>
-    <state x="100" y="123" width="2360" height="1150" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2560.1350@0.23.2560.1350" timestamp="1576642688491" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>28</line>
+          <line>30</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

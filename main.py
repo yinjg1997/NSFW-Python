@@ -10,9 +10,11 @@ import numpy as np
 import skimage
 import skimage.io
 import os
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]="-1"
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 model_weights_path = 'data/open_nsfw-weights.npy'
 model = OpenNsfwModel()
@@ -37,10 +39,11 @@ def prepare_image(image):
 
     image = image.astype(np.float32, copy=False)
     image = image * 255.0
-    image = image-np.array(VGG_MEAN, dtype=np.float32)
+    image = image - np.array(VGG_MEAN, dtype=np.float32)
 
     image = np.expand_dims(image, axis=0)
     return image
+
 
 # 使用TFLite文件检测
 def getResultFromFilePathByTFLite(path):
@@ -82,6 +85,7 @@ def getResultFromFilePathByTFLite(path):
     print("")
     print("")
 
+
 def getResultFromFilePathByPyModle(path):
     # print("numpy-version:" + np.__version__)
     # print("tensorflow-version:" + tf.__version__)
@@ -116,11 +120,12 @@ def getResultFromFilePathByPyModle(path):
 
 
 def getResultListFromDir():
-    list = os.listdir("/Users/zhaowenwen/Downloads/testImages")
+    img_dir = './test_images'
+    list = os.listdir(img_dir)
     for i in range(0, len(list)):
         if (list[i] != ".DS_Store" and list[i] != ".localized"):
-            getResultFromFilePathByPyModle(os.path.join("/Users/zhaowenwen/Downloads/testImages", list[i]))
-            getResultFromFilePathByTFLite(os.path.join("/Users/zhaowenwen/Downloads/testImages", list[i]))
+            getResultFromFilePathByPyModle(os.path.join(img_dir, list[i]))
+            getResultFromFilePathByTFLite(os.path.join(img_dir, list[i]))
 
 
 # 代码生成tflite文件
@@ -130,18 +135,19 @@ def createTfliteFile():
 
     # 模型输入节点
     input_tensor_name = ["input"]
-    input_tensor_shape = {"input":[1, 224,224,3]}
+    input_tensor_shape = {"input": [1, 224, 224, 3]}
     # 模型输出节点
     classes_tensor_name = ["predictions"]
 
     converter = tf.lite.TFLiteConverter.from_frozen_graph(in_path,
-                                                input_tensor_name, classes_tensor_name,
-                                                input_shapes = input_tensor_shape)
+                                                          input_tensor_name, classes_tensor_name,
+                                                          input_shapes=input_tensor_shape)
     # converter.post_training_quantize = True
     tflite_model = converter.convert()
 
     with open(out_path, "wb") as f:
         f.write(tflite_model)
+
 
 #生成.pb .index  .meta .ckpt.data文件
 # freeze_graph --input_graph=/Users/jason/nsfw/flask-open-nsfw/model/nsfw-graph.pb --input_checkpoint=/Users/jason/nsfw/flask-open-nsfw/model/nsfw_model.ckpt --input_binary=true --output_graph=/Users/jason/nsfw/flask-open-nsfw/model/frozen_nsfw.pb --output_node_names=predictions
@@ -165,8 +171,8 @@ def createTfliteFile():
 
 if __name__ == "__main__":
     #检测加载Downloads下所有文件，逐个输出检测结果
-        getResultListFromDir()
-    #生成TFLite文件
-        # createTfliteFile()
-        # print('tensorflowVersion:',tf.__version__)
-        # print('npVersion:',np.__version__)
+    getResultListFromDir()
+#生成TFLite文件
+# createTfliteFile()
+# print('tensorflowVersion:',tf.__version__)
+# print('npVersion:',np.__version__)
